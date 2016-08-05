@@ -19,3 +19,7 @@ body {
 footer {
     margin: 50px 0;
 }
+
+.thumbnail .caption {
+	height: 15em;
+}
