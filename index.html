@@ -53,15 +53,16 @@
         <!-- Page Features -->
         <div class="row text-center">
 
-            <div class="col-md-3 col-sm-6 hero-feature">
+            <div class="col-md-3 col-sm-6 hero-feature" style="height:100px">
                 <div class="thumbnail">
-                    <img src="images/things.jpg" alt="">
+                    <img src="images/hardware.jpg" alt="">
                     <div class="caption">
                         <h3>The Project</h3>
                         <p>The motivations</p><br>
                         <p>
                             <a href="#the_project" class="btn btn-default">Read More</a>
                         </p>
+
                     </div>
                 </div>
             </div>
@@ -71,7 +72,7 @@
                     <img src="images/felix.jpg" alt="">
                     <div class="caption">
                         <h3>Software</h3>
-                        <p>Drive your phone.</p>
+                        <p>Drive your <a href="#the_software">android phone</a><br></p>
                         <p>
                             <a href="https://github.com/capitancambio/smartphone-bci" class="btn btn-default"><img src="images/GitHub-Mark-32px.png"/>Go To Repo!</a>
                         </p>
@@ -84,7 +85,7 @@
                     <img src="images/pcb_01.jpg" alt="">
                     <div class="caption">
                         <h3>Hardware</h3>
-                        <p>Drive your head.</p>
+                        <p>Drive your head<br>and read about <a href="#the_hardware">the v0.1 kit</a></p>
                         <p>
                             <a href="https://github.com/jmanart/smartphone-bci-hardware/" class="btn btn-default"><img src="images/GitHub-Mark-32px.png"/>Go To Repo!</a>
                         </p>
@@ -111,7 +112,7 @@
         <hr>
         <!-- <div class="row text-center"> -->
         <header class=" hero-spacer">
-            <h2>The Project</h2><a name="the_project"></a>
+            <h2>Project Overview</h2><a name="the_project"></a>
             <p> Powered by <a href=""/><span style="color:#000; font-family:Orbitron">NeuroTech</span>
                     <span style="color:#23b3c6; font-family:Orbitron">X</span></a>
         </header>
@@ -180,31 +181,134 @@
 
             </p>
 
-        <!-- </div> -->
         <hr>
-        <!-- <div class="row text-center"> -->
+        <header class=" hero-spacer"> 
+            <h2>The Hardware</h2><a name="the_hardware"></a>
+        </header> 
+<div class="row">
+  <div class="col-md-6">
+  				<h3>Kit v0.1</h3>
+            <p class="text-justify">Each v0.1 kit should contain:
+             <ul>
+              	<li>1x PCB
+					<li>1x 9V battery
+					<li>1x croc clip (for SHLD)
+					<li>1x jumper wire (for SHLD)
+					<li>1x 1m 3.5mm male-to-male audio cable (to attach phone to PCB)
+					<li>3x electrodes (for A, B, COM)
+					<li>2x alcohol swabs (to clean skin, electrodes following use)
+					<li>1x resealable bag (to store Ten20 conductive gel)
+					<li>1x bathing cap (separately)
+					<li>kitchen foil (separately; to SHLD electrodes)
+				</ul> 
+				Please check your kit before assembly/use​. You'll need a knife to cut the electrodes and a small flat head screw driver to connect these cables ...
+            </p>
+            <h3>Assembly</h3>    
+            <p class="text-justify">
+            	<ol>
+            		<li>Check if your kit is complete :)</li>
+            		<li>Cut the three electrodes at the connector (not at the electrode) to a length that allows you to hold your PCB and phone comfortably while having the electrodes connected to your head</li> 
+            		<li>Braid/twist the three electrodes to reduce independant interference. Leave 20cms at the electrode end to allow flexible placement.</li>
+            		<li>Strip the clipped ends</li>
+            		<li>Tightly wrap the braided part of the electrodes in tin foil to further reduce signal interference</li>
+            		<li>Attach the croc clip to the tin foil</li>
+            		<li>Attach the jumper wire to the croc clip and the SHLD terminal on the PCB</li>
+            		<li>Connect the electrodes to the screw terminal:</li>
+            		 <li> <b>A</b> 1st electrode to scalp
+					 	<li> <b>B</b> 2nd electrode to scalp (order unimportant)
+					 	<li> <b>COM</b> ground to ear lobe or mastoid (if measuring from back) or middle of forehead (if from front)
+                                                <li><strong>Ensure your phone is not connected to mains (aka charging)</strong></li>
+					 	<li>3.5mm Audio Cable into the audio jack of both PCB and Phone</li>
+            		<li>NB. Audio Cable can be temperamental - you might have to check with a pair of speakers</li>
+            		<li>Connect the battery</li>
+						<li>Your hardware is now assembled \o/</li>
+            	</ol>
+            </p>
+  </div>
+  <div class="col-md-6">
+    <img src="images/hardware_v01.jpg" alt="Version 0.1" class="img-responsive align-right" />
+  </div>
+</div>
+        <header class=" hero-spacer"> 
+            <h2>The Software</h2><a name="the_software"></a>
+        </header> 
+            <br>
+				<h3>APK</h3>            
+            <p class="text-justify">Ok, so far this is for Android only. 
+            There's an APK for <a href="https://github.com/capitancambio/smartphone-bci/releases">download somewhere</a>, I'm sure of it. 
+            	Propably a good idea to check the <a href="https://github.com/capitancambio/smartphone-bci">github repo</a></p>    
+				
+				<h3>Sanity Check</h3>
+         	<p class="text-justify">
+         		After assembling the hardware, install the APK and connect the kit to do a <strong>sanity check</strong>:
+            	<ul>
+            	 <li>Install the app on the phone</li>
+            	 <li>Connect the battery to the circuit</li>
+            	 <ul>
+            	 	<li>Ensure that the phone is NOT connected to the mains</li>
+            	</ul> 
+            	 <li>Connect the jack from the circuit to the phone</li>
+            	 <li>Open the app</li>
+            	 <li>Press "Play"</li>
+					<ul>
+            	 <li>If needed (aka App crashes on pressing play, potentially Android 6), you need to grant permission the the app to access the microphone in settings/apps/smartphone-bci</li>
+            	</ul>
+            	 <li>Slide until you get to a graph called 'sanity check'</li>
+            	 <li>Do not hold the circuit with your hands, as your body acts as ground</li>
+            	 <li>You should see two peaks in the graph; one around 0-1 Hz (carrier signal), one around 50Hz (mains)</li>
+            	</ul>  
+         	</p>    
+<hr>
+
+				<h3>Experiments</h3>
+         	<p class="text-justify">
+                Placing the electrodes using the <a href="https://en.wikipedia.org/wiki/10-20_system_%28EEG%29">10-20 system</a>:
+         	  <ul> 
+         	  	<li>Use alcohol to swab the area where the electrodes will be placed.
+         	  	<li>Fill the electrode cup with conductive gel before placement and clean them after the experiments to prevent corrosion</li>
+         	  	<li>If measuring from o1 and o2, place COM electrode on ear or side of neck</li>
+         	  	<li>If measuring from fp1 and fp2, COM can be placed on the center of the forehead</li>
+         	 </ul> 
+					<br />Experiments with the completed kit:
+<ul>
+<li> the Android app's "sanity check" to detect the 1kHz carrier signal and 50Hz mains
+<li> the Frist plot titled "Spectrum" might show changes when winks, blinks, jaw movements are performed
+<li> <a href="https://en.wikipedia.org/wiki/Alpha_wave">alpha waves</a> (7.5 - 12.5 Hz) from o1 and o2 or (to a lesser extent) fp1 and fp2 when user's eyes are closed
+<ul>
+	<li>Swipe to the next graph: it displays the power of your alpha band over time. <br>This value corresponds to a moving average, so it may take some time to settle.</li>
+<li> <a href="https://en.wikipedia.org/wiki/Mu_wave">mu waves</a> (7.5-12.5 Hz, esp. 9-11Hz) from c3, c4 or even cz when user is completely immobile
+</ul>
+<p> In the near future !</p>
+<li> SSVEP: peaks at the frequency of an observed flashing stimulus from o1 and o2
+<li>Experiment with placing the pcb on a table, holding it in your hand, etc. Where do you get the better signal?</li>         	
+</ul>         	
+         	</p>    
         <header class=" hero-spacer"> 
             <h2>The Team</h2><a name="the_team"></a>
         </header> 
             <br>
-            <p class="text-justify">The team is composed by an amazing and heavily heterogeneous group of people that have voluntarily contributed in many different ways.</p>
+            <p class="text-justify">The team is composed by an amazing and heavily heterogeneous group of people that have voluntarily contributed in many different ways. This project would not have been possible without input and help from all the fellow travellers on this journey so far. In no particular order, many thanks to:</p>
             <ul>
-                    <li>Colin Rowat</li>
                     <li>Graeme Hattan</li>
                     <li>John Scott</li>
                     <li>Nick Johnson</li>
+                    <li>Colin Rowat</li>
+                    <li>Tommy Drews</li>
+                    <li>Felix Drews</li>
                     <li>Ryan Linott</li>
                     <li>Javier Asensio Cubero</li>
-                    <li>Tom Rowat</li>
-                    <li>Felix Rowat</li>
                     <li>Jesus Manzanares Artolazabal</li>
                     <li>Andrew Vladimirov</li>
                     <li>Seb Wills</li>
                     <li>Bob Kemp</li>
                     <li>John Mitchell</li>
                     <li>Marco Datola</li>
+                    <li>Bethel B.</li>
+                    <li>Frank Johnson</li>
+                    <li>Martin U.</li>
             </ul>
 
+					Also, we've received more support anyone could hope for from <a href="http://neurotechx.com">NeuroTechX</a> and their <a href="https://neurotechx.herokuapp.com">slack channel</a> as well as the <a href="https://london.hackspace.org.uk/">London Hackspace</a>  
             This is a living project and we're still looking for people to contribute in whatever way they want to, join us in our <a href="http://neurotechx.com"/>NeurotechX</a> slack channel #smartphone-bci or in our <a href="https://groups.google.com/forum/#!forum/smartphonebci">mailing list</a>.
         <hr>
         <!-- Footer -->
