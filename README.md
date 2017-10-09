@@ -9,6 +9,8 @@ This repository is part of a Hardware - Software system:
 * [SMARTPHONE-BCI](https://github.com/capitancambio/smartphone-bci)
 * [SMARTPHONE-BCI-HARDWARE](https://github.com/jmanart/smartphone-bci-hardware)
 
+Keep in touch with us at our [icibici google group](https://groups.google.com/forum/#!forum/icibici)
+
 ## About
 
 This project was born with the idea of designing a workshop for participants to build their own 2 electrode EEG reader and connect it to a phone at EMF camp 2016 for around £20.
@@ -17,7 +19,6 @@ The first draft of what we aimed to have was:
 
 * On a budget 2 electrode EEG system
 * An SSVEP operated brain computer interface (BCI) where the user can select emojis or letters from a virtual keyboard on a smartphone.
-	
 
 ## Hardware
 
