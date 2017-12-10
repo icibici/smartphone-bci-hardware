@@ -1,4 +1,4 @@
-# Icibici (Read as Easy-BCI)
+# Icibici
 
 [Icibici](https://icibici.github.io/smartphone-bci-hardware) is a hardware / software platform born with the intention of Developing an EEG under £20.
 
